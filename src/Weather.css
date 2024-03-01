@@ -1,0 +1,10 @@
+.Weather {
+  font-family: arial, sans-serif;
+  border: 2px solid #bbc3d1;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+  padding: 16px;
+  border-radius: 4px;
+  color: rgb(20, 41, 49);
+}
