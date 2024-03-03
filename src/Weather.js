@@ -16,7 +16,7 @@ export default function Weather() {
       <div class="row">
         <div class="col-6">
           <h1>New York</h1>
-          <div className=".date-condition">Saturday 10:30 PM</div>
+          <h4 className=".date-condition">Saturday 10:30 PM</h4>
         </div>
         <div class="col-6">
           <div class="temperature">

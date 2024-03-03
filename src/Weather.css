@@ -24,9 +24,10 @@
   margin-left: 10px;
   margin-top: 20px;
 }
-.Weather .date-condition {
-  margin: 0;
-  padding: 0;
+.Weather h4 {
+  margin-left: 10px;
+  font-size: 20px;
+  padding-top: 20px;
 }
 .Weather .temperature {
   font-weight: 500;
@@ -37,8 +38,9 @@
 }
 
 .Weather img {
-  height: 50px;
-  margin-top: -10px;
+  height: 70px;
+  margin-top: 40px;
+  margin-left: 50px;
 }
 .Weather .readings {
   margin-left: 120px;
