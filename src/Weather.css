@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(247, 247, 247);
+}
 .Weather {
   font-family: arial, sans-serif;
   border: 1px solid black;
@@ -5,7 +8,11 @@
   margin: 0 auto;
   padding: 20px;
   display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
   padding: 16px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   color: rgb(20, 41, 49);
 }
@@ -30,21 +37,32 @@
   margin-left: 10px;
   font-size: 20px;
   color: #70a36b;
+  font-weight: 400;
   opacity: 0.8;
   padding-top: 20px;
 }
+.Weather p {
+  font-size: 18px;
+  margin-left: 70px;
+  color: #70a36b;
+  opacity: 0.8;
+  font-weight: 400;
+}
 .Weather .temperature {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 70px;
   padding-top: -300px;
   margin-left: 150px;
   line-height: 2;
   color: balck;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .Weather .unit {
   font-size: 30px;
-  margin-top: -10px;
+  padding-top: -40px;
+  margin-left: 10px;
+  color: balck;
+  opacity: 0.7;
 }
 .Weather img {
   height: 70px;
@@ -53,11 +71,12 @@
 }
 .Weather .readings {
   margin-left: 120px;
-  font-weight: bolder;
+
   color: #70a36b;
+  letter-spacing: 0.5px;
 }
 .Weather li {
   list-style: none;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 400;
 }
