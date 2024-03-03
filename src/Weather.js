@@ -12,11 +12,7 @@ export default function Weather() {
             className="search-box"
             autoFocus="on"
           />
-          <input
-            type="submit"
-            value="Search"
-            className=" ms-2 btn btn-primary"
-          />
+          <input type="submit" value="Search" className="button-submit" />
         </form>
         <div class="row">
           <div class="col-6">
@@ -40,9 +36,15 @@ export default function Weather() {
           <div class="col-6">
             <div class="readings">
               <ul>
-                <li>Precipitation: 20%</li>
-                <li>Wind: 15 km/h</li>
-                <li>Humidity: 10%</li>
+                <li>
+                  Precipitation: <span className="numbers">20%</span>
+                </li>
+                <li>
+                  Wind: <span className="numbers">15 km/h</span>
+                </li>
+                <li>
+                  Humidity: <span className="numbers">10%</span>
+                </li>
               </ul>
             </div>
           </div>
