@@ -11,6 +11,7 @@ export default function Weather() {
               type="search"
               placeholder="Type a City..."
               className="search-box"
+              autoFocus="on"
             />
             <input
               type="submit"
@@ -31,10 +32,12 @@ export default function Weather() {
             src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
             alt="Mostly Cloudy"
           />
-          
+
+          <span className="temperature">10</span>
+          <span className="unit">°C</span>
         </div>
-        <span className="col-md-6">10°C</span>
-          <ul>
+        <div col-md-6>
+          <ul className="readings">
             <li>Precipitation: 5%</li>
             <li>Humidity: 20%</li>
             <li>Wind: 10 km/h</li>

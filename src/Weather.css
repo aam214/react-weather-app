@@ -1,7 +1,7 @@
 .Weather {
   font-family: arial, sans-serif;
   border: 2px solid #bbc3d1;
-  max-width: 800px;
+
   margin: 0 auto;
   padding: 20px;
   display: block;
@@ -17,11 +17,17 @@
   font-weight: 100;
   line-height: 29px;
 }
-.Weather ul {
-  margin: 0;
+.Weather .temperature {
+  font-weight: bold;
+  font-size: 40px;
+}
+.Weather .readings {
+  margin-left: 550px;
+  margin-top: -100px;
   padding: 0;
 }
-li {
+
+.Weather li {
   list-style: none;
   font-size: 16px;
   font-weight: 100;
