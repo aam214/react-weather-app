@@ -4,11 +4,16 @@ import axios from "axios";
 
 export default function Weather() {
   const [ready, setReady] = useState(false);
-  const [temperature, setTemperature] = useState(null);
-
+  const [weatherData, setWeatherData] = useState({});
   function handleResponse(response) {
     console.log(response.data);
-    setTemperature(response.data.main.temp);
+    setWeatherData({
+      temperature: response.data.main.temp,
+      humidity: response.data.main.humidity,
+      wind: response.data.main.wind.speed,
+      city: response.data.name,
+    });
+
     setReady(true);
   }
 
@@ -33,15 +38,13 @@ export default function Weather() {
             </div>
             <div className="col-6">
               <div className="temperature">
-                10<span className="unit">°C</span>
+                {Math.round(weatherData.temperature)}
+                <span className="unit">°C</span>
               </div>
             </div>
             <div className="col-6">
               <div>
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
-                  alt="Rainy icon"
-                />
+                <img src={weatherData.iconUrl} alt={weatherData.description} />
               </div>
             </div>
             <div className="col-6">
@@ -51,10 +54,12 @@ export default function Weather() {
                     Precipitation: <span className="numbers">20%</span>
                   </li>
                   <li>
-                    Wind: <span className="numbers">15 km/h</span>
+                    Wind:{" "}
+                    <span className="numbers"> {weatherData.wind} km/h</span>
                   </li>
                   <li>
-                    Humidity: <span className="numbers">10%</span>
+                    Humidity:{" "}
+                    <span className="numbers">{weatherData.humidity}%</span>
                   </li>
                 </ul>
               </div>
