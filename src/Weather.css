@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(41, 49, 61);
 }
 .Weather {
   font-family: arial, sans-serif;
@@ -31,7 +31,7 @@ body {
   border-radius: 4px;
   margin-left: 10px;
   color: white;
-  background: #24527a;
+  background: #27990a;
 }
 .Weather input {
   padding: 10px;
@@ -48,7 +48,7 @@ body {
 .Weather h4 {
   margin-left: 15px;
   font-size: 20px;
-  color: #24527a;
+  color: #41b125;
   font-weight: 400;
   opacity: 0.8;
   padding-top: 20px;
@@ -56,7 +56,7 @@ body {
 .Weather p {
   font-size: 18px;
   margin-left: 70px;
-  color: #24527a;
+  color: #41b125;
   opacity: 0.8;
   font-weight: 400;
 }
@@ -86,7 +86,7 @@ body {
   font-weight: 400;
 }
 .Weather .numbers {
-  color: #24527a;
+  color: #41b125;
   font-weight: 300;
 }
 .Weather li {
