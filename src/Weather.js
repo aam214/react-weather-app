@@ -10,8 +10,10 @@ export default function Weather() {
     setWeatherData({
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      wind: response.data.main.wind.speed,
+      wind: response.data.wind.speed,
       city: response.data.name,
+      description: response.data.weather[0].description,
+      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/party_cloudy.png",
     });
 
     setReady(true);
@@ -34,7 +36,7 @@ export default function Weather() {
             <div className="col-6">
               <h1>New York</h1>
               <h4 className=".date-condition">Saturday 10:30 PM</h4>
-              <p>Rainy</p>
+              <p className="text-capitalize">{weatherData.description}</p>
             </div>
             <div className="col-6">
               <div className="temperature">
