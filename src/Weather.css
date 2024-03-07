@@ -36,14 +36,14 @@ body {
 .Weather input {
   padding: 10px;
 }
-.Weather h1 {
+.Weather .location {
   font-size: 40px;
   font-weight: 400;
   color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   line-height: 29px;
   margin-left: 15px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .Weather h4 {
   margin-left: 15px;
@@ -55,7 +55,7 @@ body {
 }
 .Weather p {
   font-size: 18px;
-  margin-left: 70px;
+  margin-left: 35px;
   color: #41b125;
   opacity: 0.8;
   font-weight: 400;
@@ -63,7 +63,7 @@ body {
 .Weather .temperature {
   font-weight: 400;
   font-size: 70px;
-  padding-top: -300px;
+  padding-top: -290px;
   margin-left: 150px;
   line-height: 2;
   color: balck;
@@ -71,7 +71,6 @@ body {
 }
 .Weather .unit {
   font-size: 30px;
-  padding-top: -40px;
   margin-left: 10px;
   color: balck;
   opacity: 0.7;
@@ -82,8 +81,9 @@ body {
   margin-left: 50px;
 }
 .Weather .readings {
-  margin-left: 120px;
+  margin-left: 110px;
   font-weight: 400;
+  margin-bottom: 60px;
 }
 .Weather .numbers {
   color: #41b125;
