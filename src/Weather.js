@@ -3,23 +3,21 @@ import "./Weather.css";
 import axios from "axios";
 
 export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
+      ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
+      date: "Wednesday 07:00",
       wind: response.data.wind.speed,
       city: response.data.name,
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/party_cloudy.png",
     });
-
-    setReady(true);
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <body>
         <div className="Weather">
@@ -46,6 +44,7 @@ export default function Weather() {
             </div>
             <div className="col-6">
               <div>
+                {" "}
                 <img src={weatherData.iconUrl} alt={weatherData.description} />
               </div>
             </div>
@@ -71,8 +70,7 @@ export default function Weather() {
       </body>
     );
   } else {
-    let city = "London";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3651978c9504998a1bbdc776a6aad483&units=imperial`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.city}&appid=3651978c9504998a1bbdc776a6aad483&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading...";
