@@ -5,6 +5,7 @@ import axios from "axios";
 import ReturnInfo from "./ReturnInfo";
 
 export default function Weather(props) {
+const
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     setWeatherData({
@@ -17,16 +18,23 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
     });
   }
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+  function handleLocationChange(event) {
+    event.preventDefault();
+  }
 
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form>
+        <form onSubmit={handleSubmit}>
           <input
             type="search"
             placeholder="Enter a city.."
             className="search-box"
             autoFocus="on"
+            onChange={handleLocationChange}
           />
           <input type="submit" value="Search" className="button-submit" />
         </form>
