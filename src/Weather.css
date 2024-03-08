@@ -42,11 +42,11 @@ body {
   color: black;
   opacity: 0.8;
   line-height: 29px;
-  margin-left: 15px;
+  margin-left: 28px;
   margin-top: 50px;
 }
 .Weather h4 {
-  margin-left: 15px;
+  margin-left: 28px;
   font-size: 20px;
   color: #41b125;
   font-weight: 400;
@@ -55,7 +55,7 @@ body {
 }
 .Weather p {
   font-size: 18px;
-  margin-left: 35px;
+  margin-left: 28px;
   color: #41b125;
   opacity: 0.8;
   font-weight: 400;
