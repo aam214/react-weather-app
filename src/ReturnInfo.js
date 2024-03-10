@@ -16,7 +16,7 @@ export default function ReturnInfo(props) {
         <div className="col-6">
           <div className="temperature">
             {Math.round(props.data.temperature)}
-            <span className="unit">°F</span>
+            <div className="unit">°F</div>
           </div>
         </div>
         <div className="col-6">
