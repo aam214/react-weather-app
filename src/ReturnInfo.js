@@ -1,5 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
+import AnimatedIcon from "./AnimatedIcon";
 
 export default function ReturnInfo(props) {
   return (
@@ -19,9 +20,8 @@ export default function ReturnInfo(props) {
           </div>
         </div>
         <div className="col-6">
-          <div>
-            {" "}
-            <img src={props.data.iconUrl} alt={props.data.description} />
+          <div className="float-left">
+            <AnimatedIcon code={props.data.icon} />
           </div>
         </div>
         <div className="col-6">
