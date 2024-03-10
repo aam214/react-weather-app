@@ -66,28 +66,26 @@ body {
   padding-top: -290px;
   margin-left: 150px;
   line-height: 2;
-  color: balck;
+  color: black;
   opacity: 0.8;
 }
 .Weather .unit {
-  font-size: 30px;
-  margin-left: 10px;
-  color: balck;
+  font-size: 35px;
+  margin-left: 100px;
+  margin-top: -114px;
+  position: absolute;
+  color: black;
   opacity: 0.7;
 }
-.Weather img {
-  height: 80px;
-  margin-top: 30px;
-  margin-left: 50px;
-}
+
 .Weather .readings {
   margin-left: 110px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 60px;
 }
 .Weather .numbers {
   color: #41b125;
-  font-weight: 300;
+  font-weight: 500;
 }
 .Weather li {
   list-style: none;
