@@ -20,7 +20,7 @@ export default function ReturnInfo(props) {
           </div>
         </div>
         <div className="col-6">
-          <div className="float-left">
+          <div className="mt-2 ms-5">
             <AnimatedIcon code={props.data.icon} />
           </div>
         </div>
