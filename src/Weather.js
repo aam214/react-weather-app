@@ -9,7 +9,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      iconUrl: "https://openweathermap.org/img/wn/10d@2x.png",
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
@@ -25,6 +25,7 @@ export default function Weather(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    search();
   }
   function handleLocationChange(event) {
     setCity(event.target.value);
