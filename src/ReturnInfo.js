@@ -1,6 +1,7 @@
 import React from "react";
 import FormatDate from "./FormatDate";
 import AnimatedIcon from "./AnimatedIcon";
+import WeatherConversion from "./WeatherConversion";
 
 export default function ReturnInfo(props) {
   return (
@@ -13,33 +14,25 @@ export default function ReturnInfo(props) {
           </h4>
           <p className="text-capitalize">{props.data.description}</p>
         </div>
+
         <div className="col-6">
-          <div className="temperature">
-            {Math.round(props.data.temperature)}
-            <div className="unit">°F</div>
-          </div>
+          <WeatherConversion fahrenheit={props.data.temperature} />
         </div>
-        <div className="col-6">
-          <div className="mt-2 ms-5">
-            <AnimatedIcon code={props.data.icon} />
-          </div>
+      </div>
+      <div className="col-6">
+        <div className="mt-2 ms-5">
+          <AnimatedIcon code={props.data.icon} />
         </div>
-        <div className="col-6">
-          <div className="readings">
-            <ul>
-              <li>
-                Precipitation: <span className="numbers">20%</span>
-              </li>
-              <li>
-                Wind: <span className="numbers"> {props.data.wind} km/h</span>
-              </li>
-              <li>
-                Humidity:{" "}
-                <span className="numbers">{props.data.humidity}%</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+      </div>
+      <div className="col-6">
+        <ul>
+          <li>
+            Wind:<span className="numbers"> {props.data.wind}km/h</span>
+          </li>
+          <li>
+            Humidity: <span className="numbers">{props.data.humidity}% </span>
+          </li>
+        </ul>
       </div>
     </div>
   );

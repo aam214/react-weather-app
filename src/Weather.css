@@ -6,10 +6,9 @@ body {
   border: 1px solid black;
   background-color: white;
   margin: 0 auto;
-  padding: 20px;
   display: block;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 
   padding: 16px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
@@ -70,25 +69,34 @@ body {
   opacity: 0.8;
 }
 .Weather .unit {
-  font-size: 35px;
-  margin-left: 100px;
-  margin-top: -114px;
+  font-size: 30px;
+  margin-left: 88px;
+  margin-top: -110px;
   position: absolute;
   color: black;
   opacity: 0.7;
 }
-
+.Weather a {
+  text-decoration: none;
+}
 .Weather .readings {
-  margin-left: 110px;
   font-weight: 500;
-  margin-bottom: 60px;
+  margin-left: 570px;
+}
+.Weather ul {
+  margin-top: -90px;
 }
 .Weather .numbers {
   color: #41b125;
   font-weight: 500;
 }
+
 .Weather li {
+  line-height: 1.5;
+  font-weight: 500;
   list-style: none;
   font-size: 17px;
+  margin-left: 540px;
+
   font-weight: 400;
 }
