@@ -1,5 +1,9 @@
 body {
-  background-color: rgb(41, 49, 61);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("moss.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
 }
 .Weather {
   font-family: arial, sans-serif;

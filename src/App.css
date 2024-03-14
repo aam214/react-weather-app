@@ -4,9 +4,12 @@
   margin-top: 150px;
   display: block;
 }
+.App a{
+  text-decoration: none;
+}
 .App footer {
   font-size: 14px;
-  color: white;
+color: white;
   text-align: center;
   margin: 10px 0;
 }
