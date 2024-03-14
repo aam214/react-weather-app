@@ -107,3 +107,8 @@ margin-bottom: 20px;
   margin-left: 520px;
   font-weight: 400;
 }
+@media (max-width: 960px) {
+  .Weather{
+    max-width: 400px;
+  }
+}

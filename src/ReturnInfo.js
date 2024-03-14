@@ -7,7 +7,7 @@ export default function ReturnInfo(props) {
   return (
     <div className="ReturnInfo">
       <div className="row">
-        <div className="col-6">
+        <div className="col-md-6">
           <h1 className="location">{props.data.city}</h1>
           <h4 className=".date-condition">
             <FormatDate date={props.data.date} />
@@ -15,13 +15,13 @@ export default function ReturnInfo(props) {
           <p className="text-capitalize">{props.data.description}</p>
         </div>
 
-        <div className="col-6">
+        <div className="col-md-6">
           <WeatherConversion fahrenheit={props.data.temperature} />
         </div>
       </div>
-      <div className="col-6">
+      <div className="col-md-6">
         <div className="mt-2 ms-5">
-          <AnimatedIcon code={props.data.icon} />
+          <AnimatedIcon code={props.data.icon} size={75}/>
         </div>
       </div>
       <div className="readings">
