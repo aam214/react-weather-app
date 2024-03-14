@@ -2,18 +2,19 @@ import React, { useState } from "react";
 
 export default function WeatherConversion(props) {
   const [unit, setUnit] = useState("fahrenheit");
-  if (unit === "fahrenheit") {
-    return (
-      <div className="WeatherConversion">
-        <div className="temperature">
-          {Math.round(props.fahrenheit)}
+  lme="temperature">
+          {Math.round(props.fahrenheit)}</div>
           <div className="unit">
             °F / <a href="/">°C</a>
-          </div>
+        </div>  
         </div>
-      </div>
-    );
-  } else {
-    return "C";
+          } else {
+    return (   
+      <div className="temperature">
+          {Math.round(props.fahrenheit)}</div>
+          <div className="unit">
+            °F / <a href="/">°C</a>
+        </div>  
+
+
   }
-}
