@@ -24,7 +24,7 @@ export default function ReturnInfo(props) {
           <AnimatedIcon code={props.data.icon} />
         </div>
       </div>
-      <div className="col-6">
+      <div className="readings">
         <ul>
           <li>
             Wind:<span className="numbers"> {props.data.wind}km/h</span>

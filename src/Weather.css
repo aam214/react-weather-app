@@ -7,6 +7,7 @@ body {
   background-color: white;
   margin: 0 auto;
   display: block;
+
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 
@@ -32,17 +33,20 @@ body {
   color: white;
   background: #27990a;
 }
+.icon{
+  margin-bottom: 20px;
+}
 .Weather input {
   padding: 10px;
 }
 .Weather .location {
-  font-size: 40px;
+  font-size: 47px;
   font-weight: 400;
   color: black;
   opacity: 0.8;
   line-height: 29px;
   margin-left: 28px;
-  margin-top: 50px;
+  margin-top: 48px;
 }
 .Weather h4 {
   margin-left: 28px;
@@ -63,14 +67,14 @@ body {
   font-weight: 400;
   font-size: 70px;
   padding-top: -290px;
-  margin-left: 150px;
+  margin-left: 144px;
   line-height: 2;
   color: black;
   opacity: 0.8;
 }
 .Weather .unit {
-  font-size: 30px;
-  margin-left: 88px;
+  font-size: 27px;
+  margin-left: 230px;
   margin-top: -110px;
   position: absolute;
   color: black;
@@ -79,12 +83,12 @@ body {
 .Weather a {
   text-decoration: none;
 }
-.Weather .readings {
-  font-weight: 500;
-  margin-left: 570px;
+.Weather .readings{
+margin-bottom: 20px;
 }
 .Weather ul {
   margin-top: -90px;
+  
 }
 .Weather .numbers {
   color: #41b125;
@@ -96,7 +100,6 @@ body {
   font-weight: 500;
   list-style: none;
   font-size: 17px;
-  margin-left: 540px;
-
+  margin-left: 520px;
   font-weight: 400;
 }
