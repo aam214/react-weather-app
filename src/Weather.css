@@ -55,7 +55,7 @@ body {
 .Weather h4 {
   margin-left: 28px;
   font-size: 20px;
-  color: #41b125;
+  color: #081f37;
   font-weight: 400;
   opacity: 0.8;
   padding-top: 20px;
@@ -63,7 +63,7 @@ body {
 .Weather p {
   font-size: 18px;
   margin-left: 28px;
-  color: #41b125;
+  color: #081f37;
   opacity: 0.8;
   font-weight: 400;
 }
@@ -95,7 +95,7 @@ margin-bottom: 20px;
   
 }
 .Weather .numbers {
-  color: #41b125;
+  color: #081f37;
   font-weight: 500;
 }
 
