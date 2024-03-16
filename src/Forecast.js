@@ -1,33 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import AnimatedIcon from "./AnimatedIcon"
 import "./Forecast.css" ; 
 import axios from "axios";
 
 
-export default function Forecast(){
+export default function Forecast(props){
+  let [loaded, setLoaded]= useState(false);
+  let [forecastData, setForecastData]= useState(null);
+  
+  
   function handleResponse(response){
-    console.log(response.data);
+  setForecastData(response.data.daily);
+  setLoaded(true);
+  
   }
-  
-  
-  let apiUrl=
-  `https://api.openweathermap.org/data/3.0/onecall?lat=51.5&lon=0.1276&appid=3651978c9504998a1bbdc776a6aad483`
-axios.get(apiUrl).then(handleResponse);
 
 
-return( <div className="Forecast">
-    <div className="row">
-      <div className="col">
-      <div className="Forecast-Day">Thurs</div>
-        <AnimatedIcon code="01d" size={50}/>
-      <span className="Forecast-Min">7{""}</span>
-       <span className="Forecast-Max">9</span>
-      </div>
+
+if (loaded) {
+  
+  return( 
+  <div className="Forecast">
+  <div className="row">
+    <div className="col">
+    <div className="Forecast-Day">Thurs</div>
+      <AnimatedIcon code="01d" size={50}/>
+    <span className="Forecast-Min">7{""}</span>
+     <span className="Forecast-Max">{forecastData[0].temperature.maximum}°</span>
     </div>
   </div>
-
-
-
-
-  );
+</div>
+);
 }
+else {
+  let city=props.city;
+  let apiUrl=
+    `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=8d9c6f00c08bcb1a3bo8fd87a4d1b4t6&units=imperial`
+  axios.get(apiUrl).then(handleResponse);
+  
+  return null;
+  }}
