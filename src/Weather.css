@@ -38,9 +38,7 @@ body {
   color: white;
   background: #27990a;
 }
-.icon{
-  margin-bottom: 20px;
-}
+
 
 .Weather input {
   width: 40%;
@@ -121,12 +119,15 @@ margin-bottom: 20px;
     max-width: 500px;
     padding: 15px;
   }
-.icon{
-  margin-bottom: 20px;
-}
+  .Weather input {
+    width: 50%;
+  }
+  .Weather .button-submit{
+    width: 30%;
+  }
 
   .Weather .temperature,.icon { 
-  
+
     display: flex;
   }
   .Weather .unit{

@@ -1,7 +1,23 @@
 .Forecast{
   text-align: center;
 }
+.icon{
+  margin-bottom: 20px;
+}
 .Forecast .min{
-padding: 7px;
-margin-right:5px;
+padding-right: 8px;
+margin-right:2px;
+}
+@media (max-width: 960px) {
+.Forecast{
+  margin-left: 72px;
+  padding: 10px;
+}
+  .icon{
+  margin-bottom: 20px;
+
+}
+.Thu{
+  display: none;
+}
 }

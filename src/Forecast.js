@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from "react";
-
 import "./Forecast.css" ; 
 import axios from "axios";
 import ForecastDays from "./ForecastDays";
@@ -40,7 +39,9 @@ if (loaded) {
    <ForecastDays data={forecastData[3]}/>
    </div>  
    <div className="col">
+    <span className="Thu">
    <ForecastDays data={forecastData[4]}/>
+   </span>
    </div>  
    </div>  
    </div>
