@@ -26,16 +26,17 @@ if (loaded) {
     <div className="Forecast-Day">Thurs</div>
       <AnimatedIcon code="01d" size={50}/>
     <span className="Forecast-Min">7{""}</span>
-     <span className="Forecast-Max">{forecastData[0].temperature.maximum}°</span>
+     <span className="Forecast-Max">{forecastData[0].temp.max}°</span>
     </div>
   </div>
 </div>
 );
 }
 else {
-  let city=props.city;
-  let apiUrl=
-    `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=8d9c6f00c08bcb1a3bo8fd87a4d1b4t6&units=imperial`
+  let longitude = props.coordinates.lon;
+  let latitude = props.coordinates.lat;
+  let apiUrl=`https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&appid=5f472b7acba333cd8a035ea85a0d4d4c`
+
   axios.get(apiUrl).then(handleResponse);
   
   return null;
