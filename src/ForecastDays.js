@@ -1,5 +1,6 @@
 import React from "react";
 import AnimatedIcon from "./AnimatedIcon";
+import "./Forecast.css" ; 
 
 export default function ForecastDays(props){
 
@@ -24,9 +25,9 @@ return days[day];
   return ( 
   <div className="mt-5">
   <div className="Forecast-Day">{day()}</div>
-  <AnimatedIcon code={props.data.weather[0].icon} size={45}/>
-<span className="Forecast-Min">{maxTemperature()}{""}</span>
- <span className="Forecast-Max">{maxTemperature()}</span>
+  <AnimatedIcon code={props.data.weather[0].icon} className="forecast-icon" size={45}/>
+<span className="min">{minTemperature()}{""}</span>
+ <span className="max">{maxTemperature()}</span>
 </div>
 );
 

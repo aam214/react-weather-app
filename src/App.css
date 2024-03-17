@@ -13,3 +13,8 @@ color: white;
   text-align: center;
   margin: 10px 0;
 }
+@media (max-width: 960px) {
+  .App footer{
+    margin-top: 30px;
+  }
+}
