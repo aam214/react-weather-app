@@ -13,6 +13,11 @@ export default function App() {
           target="_blank"
           rel="noreferrer"
         > {""}GitHub
+        </a> and can be viewed at<a
+          href="https://weather-app-react-am.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        > {""}GitHub
         </a>
       </footer>
     </div>
