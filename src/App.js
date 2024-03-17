@@ -17,7 +17,7 @@ export default function App() {
           href="https://weather-app-react-am.netlify.app/"
           target="_blank"
           rel="noreferrer"
-        > {""}GitHub
+        > {""}Netlify.
         </a>
       </footer>
     </div>
