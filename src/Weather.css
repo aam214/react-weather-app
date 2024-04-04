@@ -1,6 +1,6 @@
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-  url("moss.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url("satellite-world.jpg");
   background-repeat: none;
   background-size: cover;
   background-position: center;

@@ -1,20 +1,15 @@
 .App {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 110px;
+  margin-top: 150px;
   display: block;
-}
-.App a{
-  text-decoration: none;
 }
 .App footer {
   font-size: 14px;
-color: white;
+  color: white;
   text-align: center;
   margin: 10px 0;
 }
-@media (max-width: 960px) {
-  .App footer{
-    margin-top: 30px;
-  }
+footer a{
+  color: aqua;
 }
